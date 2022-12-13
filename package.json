@@ -2,13 +2,15 @@
   "name": "design-system-storybook-poc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://contxts-io.github.io/frontend-design-system-storybook-poc",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "eslint": "8.29.0",
@@ -29,6 +31,7 @@
     "@storybook/react": "^6.5.14",
     "@storybook/testing-library": "^0.0.13",
     "babel-loader": "^8.3.0",
-    "eslint-plugin-storybook": "^0.6.8"
+    "eslint-plugin-storybook": "^0.6.8",
+    "gh-pages": "^4.0.0"
   }
 }
