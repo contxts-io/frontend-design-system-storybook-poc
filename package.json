@@ -1,6 +1,6 @@
 {
   "name": "@tina_a/design-system-storybook-poc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "homepage": "https://contxts-io.github.io/frontend-design-system-storybook-poc",
   "scripts": {
