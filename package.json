@@ -13,13 +13,19 @@
     "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
+    "@babel/plugin-transform-arrow-functions": "^7.18.6",
+    "@babel/plugin-transform-template-literals": "^7.18.9",
+    "@babel/preset-env": "^7.20.2",
     "babel-preset-react-app": "^10.0.1",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -41,7 +47,14 @@
   },
   "description": "Learn Storybook design system",
   "main": "dist/index.js",
-  "repository": "git@github.com:contxts-io/frontend-design-system-storybook-poc.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/contxts-io/frontend-design-system-storybook-poc.git"
+  },
   "author": "tina kang <tina@contxts.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contxts-io/frontend-design-system-storybook-poc/issues"
+  },
+  "keywords": []
 }
