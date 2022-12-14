@@ -12,16 +12,6 @@
     "build-storybook": "build-storybook",
     "deploy-storybook": "gh-pages -d storybook-static"
   },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "absoluteRuntime": false
-        }
-      ]
-    ]
-  },
   "dependencies": {
     "babel-preset-react-app": "^10.0.1",
     "eslint": "8.29.0",

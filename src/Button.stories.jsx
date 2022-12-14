@@ -1,12 +1,11 @@
 import React from 'react';
-
-import { MainButton } from './Button';
-import { ButtonWrapper } from './button.styled';
+import styled, { css } from 'styled-components';
+import { Button } from './Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Example/Button',
-  component: MainButton,
+  component: Button,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     variant: {
@@ -25,7 +24,7 @@ export default {
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-export const Standard = (args) => <MainButton {...args} />
+export const Standard = (args) => <Button {...args} />
 Standard.args = {
   variant: 'primary',
   width: '100%',
@@ -39,9 +38,9 @@ Standard.args = {
 
 export const Variants = (args) => (
   <ButtonWrapper>
-    <MainButton {...args} variant="primary" />
-    <MainButton {...args} variant="secondary" />
-    <MainButton {...args} variant="tertiary" />
+    <Button {...args} variant="primary" />
+    <Button {...args} variant="secondary" />
+    <Button {...args} variant="tertiary" />
   </ButtonWrapper>
 );
 Variants.args = {
@@ -56,3 +55,12 @@ Variants.parameters = {
     storyDescription: '3가지 타입의 variant를 지원합니다.',
   },
 };
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  & > button {
+    margin-right: 12px;
+  }
+`;
